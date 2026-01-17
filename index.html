@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống chấm điểm Demo - TDM-JSA04</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-clipboard-check"></i>
+                <div class="logo-text">
+                    <h1>Hệ thống chấm điểm Demo</h1>
+                    <span>Web Developer - Advanced | TDM-JSA04</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="label">Ngày Demo</span>
+                        <span class="value">17/01/2026 - 18h</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <div>
+                        <span class="label">Ngày đánh giá</span>
+                        <span class="value">17/01/2026</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="label">Số học viên</span>
+                        <span class="value">4</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-star"></i>
+                    <div>
+                        <span class="label">Điểm tối đa</span>
+                        <span class="value">5.0</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="students-section">
+                <h2><i class="fas fa-user-graduate"></i> Danh sách học viên</h2>
+                <div class="students-grid">
+                    <a href="hongminh.html" class="student-card" style="--accent: #6366f1;">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="student-info">
+                            <h3>Phan Hồng Minh</h3>
+                            <span class="project-name">Quiz Application</span>
+                        </div>
+                        <div class="student-score" id="score-hongminh">
+                            <span class="score">--</span>
+                            <span class="max">/ 5.0</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+
+                    <a href="nhatnam.html" class="student-card" style="--accent: #10b981;">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="student-info">
+                            <h3>Nguyễn Bá Nhật Nam</h3>
+                            <span class="project-name">E-Commerce Store</span>
+                        </div>
+                        <div class="student-score" id="score-nhatnam">
+                            <span class="score">--</span>
+                            <span class="max">/ 5.0</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+
+                    <a href="thienphuc.html" class="student-card" style="--accent: #f59e0b;">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="student-info">
+                            <h3>Nguyễn Ân Thiên Phúc</h3>
+                            <span class="project-name">School Management</span>
+                        </div>
+                        <div class="student-score" id="score-thienphuc">
+                            <span class="score">--</span>
+                            <span class="max">/ 5.0</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+
+                    <a href="tuananh.html" class="student-card" style="--accent: #ef4444;">
+                        <div class="student-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="student-info">
+                            <h3>Lê Trần Tuấn Anh</h3>
+                            <span class="project-name">Multi-purpose Website</span>
+                        </div>
+                        <div class="student-score" id="score-tuananh">
+                            <span class="score">--</span>
+                            <span class="max">/ 5.0</span>
+                        </div>
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="criteria-overview">
+                <h2><i class="fas fa-list-check"></i> Tiêu chí đánh giá</h2>
+                <div class="criteria-grid">
+                    <div class="criteria-card">
+                        <div class="criteria-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Tư duy máy tính, thuật toán</h4>
+                        <span class="criteria-score">1.5 điểm</span>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon" style="background: linear-gradient(135deg, #10b981, #34d399);">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Tư duy sáng tạo</h4>
+                        <span class="criteria-score">1.0 điểm</span>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon" style="background: linear-gradient(135deg, #f59e0b, #fbbf24);">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Kỹ năng giao tiếp, hợp tác</h4>
+                        <span class="criteria-score">0.5 điểm</span>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon" style="background: linear-gradient(135deg, #ef4444, #f87171);">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Giải quyết vấn đề</h4>
+                        <span class="criteria-score">1.0 điểm</span>
+                    </div>
+                    <div class="criteria-card">
+                        <div class="criteria-icon" style="background: linear-gradient(135deg, #0891b2, #22d3ee);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Kỹ năng sử dụng máy tính</h4>
+                        <span class="criteria-score">1.0 điểm</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 TDM-JSA04 - Web Development Advance | Giáo viên: Nguyễn Phạm Minh Trí</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load scores from localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const students = ['hongminh', 'nhatnam', 'thienphuc', 'tuananh'];
+            students.forEach(student => {
+                const savedData = localStorage.getItem(`score_${student}`);
+                if (savedData) {
+                    const data = JSON.parse(savedData);
+                    const scoreElement = document.querySelector(`#score-${student} .score`);
+                    if (scoreElement) {
+                        scoreElement.textContent = data.totalScore.toFixed(2);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
